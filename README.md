@@ -131,7 +131,7 @@ Some default behavior to expect when elements get resized are:
 The standard breakpoints used in Cirrus are `xs`, `sm`, `md`, and `lg`. This replaces the `mobile`, `tablet`, and `desktop` designations used in older versions.
 
 | Type | Min (px) | Max (px) |
-|:-- |:--:|:--:|
+|:--:|:--:|:--:|
 | xs | **0** | **640** |
 | sm | **641** | **768** |
 | md | **769** | **1023** |
@@ -430,13 +430,16 @@ There are three ways to create a button:
 	<li>Use an <code>input</code> with type <code>submit</code>.</li>
 </ul>
 
-- Use the `button` tag.
-- Use the `btn` class.
-- Use an `input` with type `submit`.
-
 	<button>Button</button>
 	<div class="btn">Button</div>
 	<input type="submit" value="submit">
+
+ - asdasdasd
+ - asdasd
+ - asdasd
+
+    asdasdaasdasd
+    asdasdasd
 
 ### Colors
 
