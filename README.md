@@ -86,6 +86,11 @@ Automate compiling and minification
 
 	npm run watch
 
+| xs <br> Below and including 640px | sm <br> Between 641px and 768px | md <br> Between 769px and 1023px | lg <br> Between 1024px and 1279px | xl <br> 1280px and above |
+|:--:|:--:|:--:|:--:|:--:|
+| -
+| - <td colspan="4" align="center">asd
+
 ## Colors
 [Back to top](#top)
 
