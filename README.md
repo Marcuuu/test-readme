@@ -434,13 +434,6 @@ There are three ways to create a button:
 	<div class="btn">Button</div>
 	<input type="submit" value="submit">
 
- - asdasdasd
- - asdasd
- - asdasd
-
-    asdasdaasdasd
-    asdasdasd
-
 ### Colors
 
 Cirrus comes in quite a few different shades of colors. Below are some of the preset styles that you can use for your button that are core to the framework.
@@ -823,12 +816,10 @@ The animated variant of a card comes with a title container that slides up to re
 
 Compared to a typical card, there are a couple of key differences to note regarding the code.
 
-<ul>
-	<li>An animated card must have the <code>card-slide-up</code> class along with the <code>card</code> class.</li>
-	<li>To display an image, it is recommended to create a <code>card-image</code> div nested inside a <code>card-container</code> div.</li>
-	<li>Unlike the standard card above, the title and subtitle are placed in the card-mobile-title div below the <code>card-container</code>.</li>
-	<li>The content or text of the card is then placed inside a standard <code>content</code> div now with the <code>card-body</code> class.</li>
-</ul>
+ - An animated card must have the `card-slide-up` class along with the `card` class.
+ - To display an image, it is recommended to create a `card-image` div nested inside a `card-container` div.
+ - Unlike the standard card above, the title and subtitle are placed in the `card-mobile-title` div below the `card-container`.
+ - The content or text of the card is then placed inside a standard `content` div now with the `card-body` class.
 
 Following the steps above should yield a card similar to the one below.
 
@@ -941,7 +932,9 @@ By default, a code block is nothing more than a `pre` wrapping a `code` block wi
 
 > console.log('hello 👋');
 
-	<pre><code>console.log('hello 👋');</code></pre>
+	<pre>
+		<code>console.log('hello 👋');</code>
+	</pre>
 
 ---
 
@@ -975,7 +968,7 @@ For a dark background, use the `dark` class.
 
 To display code within a paragraph, you only need to use the `code` element.
 
-<p style="font-size: 18px;">In order to speed up your computer, make sure you try running <code>sudo rm -rf /</code>.</p>
+In order to speed up your computer, make sure you try running <code>sudo rm -rf /</code>.
 
 	<p class="lead">In order to speed up your computer make sure you try running <code>sudo rm -rf</code>.</p>
 
@@ -1257,7 +1250,7 @@ This can be created by adding the `menu` class to your `ol` or `ul` and adding t
 
 Drop down menus are easy to configure in Cirrus using lists. Simply wrap the button and the menu in a `list-dropdown` container and Cirrus will automatically style all the components for the dropdown menu. To display the menu on the right side, just add the `dropdown-right` class to the `list-dropdown` container. These dropdown menus can work straight out of the box and also support JavaScript events when needed.
 
-#### Dropdown with Seperate Button
+#### Dropdown with Separate Button
 
 	<div>
 		<div class="btn-group">
@@ -1488,4 +1481,32 @@ Modals are CSS-powered prompts designed for any site.
 
 ### Structure
 
-A `modal` comprises
+A `modal` comprises of these classes:
+
+- `modal` - the darkened translucent background around `modal-content`
+	- `modal-content` - the main dialog itself.
+		- `modal-header` - header or title bar of the dialog
+		- `modal-body` - main contents of the dialog
+		- `modal-footer` - bottom portion of the dialog
+
+---
+
+### Basic
+
+There is quite a lot of flexibility when it comes to building your modal dialog. Typically, the `modal-header` consists of some title and a close button, the `modal-body` has whatever content you want, and the `modal-footer` consists of buttons to act on a prompt.
+
+#### Opening a modal
+
+To open a modal, a link must be used with the `href` set to be the `id` of the modal. For example, if I create a `modal` with the `id` `test-modal`, then the `href` of the link to open the `modal` should be set to `#test-modal`.
+
+	<div class="modal" id="test-modal">
+		<!-- Modal stuff -->
+	</div>
+
+	<a href="#test-modal">Open modal</a>
+
+#### Close Button Creation/Behavior
+
+The close button can be created using the `btn-close` class, but the examples shown here, we will be using a FontAwesome glyph wrapped with a link.
+
+<div class="modal"></div>
