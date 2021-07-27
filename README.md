@@ -1,53 +1,3 @@
-<style>
-	blockquote {
-		padding: 16px 16px 8px 16px;
-		margin: 1rem 0;
-	}
-	pre > code {
-		font-size: 14px;
-		background: none;
-		color: #fff;
-		padding: 0;
-		border-radius: 0;
-	}
-	code {
-		font-size: 13px;
-		background: #ffdadd;
-		color: #dc4753;
-		margin: .5em 0;
-		padding: .3rem;
-		border-radius: 3px;
-	}
-	.tag {
-		display: inline-flex;
-		align-items: center;
-		background: #2972fa;
-		color: #fff;
-		margin-right: .25rem;
-		font-size: 13px;
-		border-radius: .25rem;
-		line-height: 1.5;
-		min-height: 1.5rem;
-		padding: 0 .5rem;
-		white-space: nowrap;
-	}
-	.note {
-		background: #fbdbaa;
-		color: #9b3908;
-		border-color: #9b3908;
-		margin: 1rem 0;
-		padding: 1rem 2rem;
-		line-height: 2;
-		font-size: 16px;
-	}
-	.text-code {
-		font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-	}
-	.code-label {
-		color: #868e96;
-	}
-</style>
-
 <h1 id="top">Inty-CSS</h1>
 
 ## Table of Contents 
@@ -86,11 +36,6 @@ Automate compiling and minification
 
 	npm run watch
 
-| xs <br> Below and including 640px | sm <br> Between 641px and 768px | md <br> Between 769px and 1023px | lg <br> Between 1024px and 1279px | xl <br> 1280px and above |
-|:--:|:--:|:--:|:--:|:--:|
-| -
-| - <td colspan="4" align="center">asd
-
 ## Colors
 [Back to top](#top)
 
@@ -127,7 +72,7 @@ The standard color palette from older versions of the framework.
 Cirrus has an extensive color palette that has been updated with 0.6.0 to make them more accessible to all page elements.
 
 | | -100 | -200 | -300 | -400 | -500 | -600 | -700 | -800 | -900 |
-|--|--|--|--|--|--|--|--|--|--|
+|--|--|--|--|--|--|--|--|--|--|--|--|
 | pink |
 | red |
 | orange |
@@ -150,17 +95,17 @@ The <code>font-size</code> have been converted to rems which is independent of t
 
 These are the two main fonts used in the framework the elements they are used in.
 
-<span style="font-size: 18px;">Montserrat</span>
+**Montserrat**
 
-**Used in:**
+*Used in:*
 
-<span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span>
+h1, h2, h3, h4, h5, h6
 
-<span style="font-size: 18px;">Nunito Sans</span>
+**Nunito Sans**
 
-**Used in:**
+*Used in:*
 
-<span class="tag">p</span>, <span class="tag">label</span>, <span class="tag">span</span>, <span class="tag">blockquote</span>, <span class="tag">code</span>, <span class="tag">article</span>
+p, label, span, blockquote, code, article
 
 ## Viewports
 [Back to top](#top)
@@ -207,23 +152,41 @@ From that, the class designations in Cirrus follow this guideline:
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="5" style="text-align:center;"><div align="center" style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">Regular Class (eg. <b>u-none</b>)</div></td>
+			<td colspan="5">
+				<div align="center">Regular Class (eg. <b>u-none</b>)</div>
+			</td>
 		</tr>
 		<tr>
-			<td colspan="1"><center>-</center></td>
-			<td colspan="4"><center style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">*-sm</center></td>
+			<td colspan="1">
+				<div align="center">-</div>
+			</td>
+			<td colspan="4">
+				<div align="center">*-sm</div>
+			</td>
 		</tr>
 		<tr>
-			<td colspan="2"><center>-</center></td>
-			<td colspan="3"><center style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">*-md</center></td>
+			<td colspan="2">
+				<div align="center">-</div>
+			</td>
+			<td colspan="3">
+				<div align="center">*-md</div>
+			</td>
 		</tr>
 		<tr>
-			<td colspan="3"><center>-</center></td>
-			<td colspan="2"><center style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">*-lg</center></td>
+			<td colspan="3">
+				<div align="center">-</div>
+			</td>
+			<td colspan="2">
+				<div align="center">*-lg</div>
+			</td>
 		</tr>
 		<tr>
-			<td colspan="4"><center>-</center></td>
-			<td colspan="1"><center style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">*-xl</center></td>
+			<td colspan="4">
+				<div align="center">-</div>
+			</td>
+			<td colspan="1">
+				<div align="center">*-xl</div>
+			</td>
 		</tr>
 		<tr>
 			<td colspan="5"></td>
@@ -233,14 +196,41 @@ From that, the class designations in Cirrus follow this guideline:
 
 An example of style that follows this convention is the <code>u-none-*</code> class.
 
-|||
-|:--:|:--:|
-| <code>u-none</code> | Hide content for all widths. |
-| <code>u-none-sm</code> | Hide content for widths <code>641px</code> and above. |
-| <code>u-none-md</code> | Hide content for widths <code>768px</code> and above. |
-| <code>u-none-lg</code> | Hide content for widths <code>1024px</code> and <code>1279px</code> |
-| <code>u-none-xl</code> | Hide content for <code>1280px</code> and above. |
-|||
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<code>u-none</code>
+			</td>
+			<td>Hide content for all widths.</td>
+		</tr>
+		<tr>
+			<td>
+				<code>u-none-sm</code>
+			</td>
+			<td>Hide content for widths <code>641px</code> and above.</td>
+		</tr>
+		<tr>
+			<td>
+				<code>u-none-md</code>
+			</td>
+			<td>Hide content for widths <code>768px</code> and above.</td>
+		</tr>
+		<tr>
+			<td>
+				<code>u-none-lg</code>
+			</td>
+			<td>Hide content for widths <code>1024px</code> and <code>1279px</code>.</td>
+		</tr>
+		<tr>
+			<td>
+				<code>u-none-xl</code>
+			</td>
+			<td>Hide content for widths <code>1280px</code> and above.</td>
+		</tr>
+		<tr><td colspan="2"></tr>
+	</tbody>
+</table>
 
 ---
 
@@ -469,7 +459,6 @@ Cirrus comes in quite a few different shades of colors. Below are some of the pr
 	<button class="btn-danger">danger</button>
 
 #### Outline
-[Back to top](#top)
 
 	<button class="outline btn-transparent">transparent</button>
 	<button class="outline btn-light">light</button>
@@ -958,10 +947,12 @@ By default, a code block is nothing more than a <code>pre</code> wrapping a <cod
 
 To specify the language of the code block, just add the <code>data-lang</code> attribute to the <code>code</code> element.
 
-> <div class="text-code code-label" align="right">JavaScript</div>
-> <p class="text-code">console.log('hello 👋');</p>
+> <div align="right">JavaScript</div>
+> console.log('hello 👋');
 
-	<pre><code data-lang="JavaScript">console.log('hello 👋');</code></pre>
+	<pre>
+		<code data-lang="JavaScript">console.log('hello 👋');</code>
+	</pre>
 
 ---
 
@@ -969,10 +960,12 @@ To specify the language of the code block, just add the <code>data-lang</code> a
 
 For a dark background, use the <code>dark</code> class.
 
-> <div class="text-code code-label" align="right">JavaScript</div>
-> <p class="text-code">console.log('hello 👋');</p>
+> <div align="right">JavaScript</div>
+> console.log('hello 👋');
 
-	<pre><code class="dark" data-lang="JavaScript">console.log('hello 👋');</code></pre>
+	<pre>
+		<code class="dark" data-lang="JavaScript">console.log('hello 👋');</code>
+	</pre>
 
 ---
 
@@ -1488,3 +1481,4 @@ More examples to help you get started.
 	</ul>
 
 ## Modals
+
