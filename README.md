@@ -207,7 +207,7 @@ From that, the class designations in Cirrus follow this guideline:
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="5" style="text-align:center;"><center align="center" style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">Regular Class (eg. <b>u-none</b>)</center></td>
+			<td colspan="5" style="text-align:center;"><div align="center" style="background: #2972fa; border-color: #2972fa; padding: .75rem 1.25rem; border-radius:2px; color: #fff; position: relative; margin: .5rem;">Regular Class (eg. <b>u-none</b>)</div></td>
 		</tr>
 		<tr>
 			<td colspan="1"><center>-</center></td>
