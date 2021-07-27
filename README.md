@@ -39,19 +39,19 @@ Automate compiling and minification
 ## Colors
 [Back to top](#top)
 
-Using a color within Cirrus is as simple as just prefixing the colors with <code>bg-</code> to color the background and with <code>text-</code> to color the text.
+Using a color within Cirrus is as simple as just prefixing the colors with `bg-` to color the background and with `text-` to color the text.
 
 ### Classes
 
 #### Examples
 
-Button using <code>indigo-500</code> for text and <code>indigo-100</code> for the background.
+Button using `indigo-500` for text and `indigo-100` for the background.
 
 	<button class="text-indigo-500 bg-indigo-500">
 		Custom Button
 	</button>
 
-Square using a <code>info</code> background.
+Square using a `info` background.
 
 	<div class="bg-info u-round mx-auto" style="height: 50px; width: 50px;"></div>
 
@@ -87,9 +87,9 @@ Cirrus has an extensive color palette that has been updated with 0.6.0 to make t
 ## Typography
 [Back to top](#top)
 
-**Cirrus** incorporates beautiful typography to make your website stand out from the rest. Nunito Sans, by [Vernon Adams](https://sansoxygen.com/) is chosen for the default typography for most elements such as <code>paragraphs</code>, <code>articles</code>, <code>blockquotes</code>, and more while Montserrat adds a bold but elegant touch to titles.
+**Cirrus** incorporates beautiful typography to make your website stand out from the rest. Nunito Sans, by [Vernon Adams](https://sansoxygen.com/) is chosen for the default typography for most elements such as `paragraphs`, `articles`, `blockquotes`, and more while Montserrat adds a bold but elegant touch to titles.
 
-The <code>font-size</code> have been converted to rems which is independent of the font sizes of the parent elements. The default is set to 1rem (16px) where each interval of rem is 16 pixels.
+The `font-size` have been converted to rems which is independent of the font sizes of the parent elements. The default is set to 1rem (16px) where each interval of rem is 16 pixels.
 
 ### Typefaces
 
@@ -116,19 +116,19 @@ Cirrus by default is a framework designed to make developing mobile optimized si
 
 Some default behavior to expect when elements get resized are:
 
- - Text elements such as <code>h1</code> will shrink for mobile devices to remain in the right proportion.
+ - Text elements such as `h1` will shrink for mobile devices to remain in the right proportion.
  
- - Navigation items inside of <code>header-nav</code> will be tucked away in a dropdown menu for mobile devices.
+ - Navigation items inside of `header-nav` will be tucked away in a dropdown menu for mobile devices.
 
-- Columns inside of a <code>row</code> start out as vertically stacked elements on mobile devices. This can be ignored using the <code>ignore-screen</code> class.
+- Columns inside of a `row` start out as vertically stacked elements on mobile devices. This can be ignored using the `ignore-screen` class.
 
-- Elements inside of <code>level</code> will also be stacked vertically on mobile devices. Again, the <code>ignore-screen</code> class can be used to override this behavior.
+- Elements inside of `level` will also be stacked vertically on mobile devices. Again, the `ignore-screen` class can be used to override this behavior.
 
 ---
 
 ### Breakpoints
 
-The standard breakpoints used in Cirrus are <code>xs</code>, <code>sm</code>, <code>md</code>, and <code>lg</code>. This replaces the <code>mobile</code>, <code>tablet</code>, and <code>desktop</code> designations used in older versions.
+The standard breakpoints used in Cirrus are `xs`, `sm`, `md`, and `lg`. This replaces the `mobile`, `tablet`, and `desktop` designations used in older versions.
 
 | Type | Min (px) | Max (px) |
 |:-- |:--:|:--:|
@@ -188,13 +188,10 @@ From that, the class designations in Cirrus follow this guideline:
 				<div align="center">*-xl</div>
 			</td>
 		</tr>
-		<tr>
-			<td colspan="5"></td>
-		</tr>
 	</tbody>
 </table>
 
-An example of style that follows this convention is the <code>u-none-*</code> class.
+An example of style that follows this convention is the `u-none-*` class.
 
 <table>
 	<tbody>
@@ -228,7 +225,6 @@ An example of style that follows this convention is the <code>u-none-*</code> cl
 			</td>
 			<td>Hide content for widths <code>1280px</code> and above.</td>
 		</tr>
-		<tr><td colspan="2"></tr>
 	</tbody>
 </table>
 
@@ -236,11 +232,11 @@ An example of style that follows this convention is the <code>u-none-*</code> cl
 
 ### Usage
 
-When applying classes viewport supported classes, note that the framework assumes you are designing for a mobile device **first**. This means that applying <code>u-none</code> on some given div will apply for all screen sizes.
+When applying classes viewport supported classes, note that the framework assumes you are designing for a mobile device **first**. This means that applying `u-none` on some given div will apply for all screen sizes.
 
 #### Design For Mobile First
 
-If you then set <code>u-flex-md</code> on the div, it will then apply a flexbox layout starting at the <code>md</code> breakpoint and higher.
+If you then set `u-flex-md` on the div, it will then apply a flexbox layout starting at the `md` breakpoint and higher.
 
 	<div class="u-none u-flex-md">
 		<!-- ... -->
@@ -250,7 +246,7 @@ If you then set <code>u-flex-md</code> on the div, it will then apply a flexbox 
 
 To apply a class for a specific screen size, we can easily set this behavior using multiple declarations of the classes we need for each viewport.
 
-As an example, let's say we want to position a <code>sticky</code> div to be <code>relative</code> only for <code>sm</code> to <code>md</code>. We can achieve this with the class declarations show above.
+As an example, let's say we want to position a `sticky` div to be `relative` only for `sm` to `md`. We can achieve this with the class declarations show above.
 
 	<div class="u-sticky u-relative-sm u-sticky-md">
 		<!-- ... -->
@@ -261,7 +257,7 @@ Note that not all classes support application by viewport. You can see if a give
 ## Customization
 [Back to top](#top)
 
-You can now modify the breakpoints used in Cirrus within the new configuration file for sizing. Just edit the values stored inside <code>_size.scss</code>.
+You can now modify the breakpoints used in Cirrus within the new configuration file for sizing. Just edit the values stored inside `_size.scss`.
 
 	$breakpoints: (
 		'xs': 640px,
@@ -277,9 +273,9 @@ Animations are an essential part in crafting beautiful websites that aren't just
 
 ### Loading
 
-The loading spinner serves as an elegant indicator for progress in webpages. Just add the <code>animated loading</code> selectors to the element and Cirrus will handle the rest.
+The loading spinner serves as an elegant indicator for progress in webpages. Just add the `animated loading` selectors to the element and Cirrus will handle the rest.
 
-By default, the spinner will be horizontally centered and it will override any text. To hide the text, just add the <code>hide-text</code> class.
+By default, the spinner will be horizontally centered and it will override any text. To hide the text, just add the `hide-text` class.
 
 	<div class="card u-flex u-items-center u-justify-center">
 		<div class="animated loading hide-text">
@@ -287,7 +283,7 @@ By default, the spinner will be horizontally centered and it will override any t
 		</div>
 	</div>
 
-The spinner's color could also be changed to white with the <code>loading-white</code> class.
+The spinner's color could also be changed to white with the `loading-white` class.
 
 	<div class="card u-flex u-items-center u-justify-center" style="background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));">
 		<div class="animated loading hide-text loading-white">
@@ -295,7 +291,7 @@ The spinner's color could also be changed to white with the <code>loading-white<
 		</div>
 	</div>
 
-To show the spinner to the left, use the <code>loading-left</code> class.
+To show the spinner to the left, use the `loading-left` class.
 
 	<div class="card u-flex u-items-center u-justify-center" style="background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));">
 		<div class="animated loading hide-text loading-white">
@@ -303,7 +299,7 @@ To show the spinner to the left, use the <code>loading-left</code> class.
 		</div>
 	</div>
 
-For the right, use the <code>loading-right</code> class.
+For the right, use the `loading-right` class.
 
 	<div class="card" style="background: linear-gradient(to right, rgb(255, 88, 88), rgb(248, 87, 166));">
 		<div class="animated loading loading-right loading-white white u-text-right">
@@ -315,7 +311,7 @@ For the right, use the <code>loading-right</code> class.
 
 ### Hover Grow
 
-This is a subtle animation that enlarges a given element on hover. Just add the <code>hover-grow</code> class to your element.
+This is a subtle animation that enlarges a given element on hover. Just add the `hover-grow` class to your element.
 
 	<div class="hover-grow">
 		<img src="../../card.svg" />
@@ -405,19 +401,19 @@ Cirrus comes with a couple of tools you can use to help test or modify animation
 
 #### Infinite Animation
 
-This will sustain an animation when the user is on the page. This even works for animations not designed to be infinitely looped. The only change needed is the addition of the <code>infinite</code> class to the component.
+This will sustain an animation when the user is on the page. This even works for animations not designed to be infinitely looped. The only change needed is the addition of the `infinite` class to the component.
 
 Below is an example using the fade in animation.
 
 	<button class="btn-primary animated fadeIn infinite">Infinitely Fading</button>
 
-Now this animation seems to cut off at the end of the cycle. To make it alternate, just add the <code>alternate</code> class to make the animation more fluid.
+Now this animation seems to cut off at the end of the cycle. To make it alternate, just add the `alternate` class to make the animation more fluid.
 
 	<button class="btn-primary animated fadeIn infinite alternate">Alternating Fading</button>
 
 #### Pausing Animations
 
-This is great with testing your animations and works well with JavaScript calls also. All you need to do is add a class to the animated component called <code>paused</code>.
+This is great with testing your animations and works well with JavaScript calls also. All you need to do is add a class to the animated component called `paused`.
 
 	<button class="btn-primary animated bounce infinite alternate paused">Paused</button>
 
@@ -433,6 +429,10 @@ There are three ways to create a button:
 	<li>Use the <code>btn</code> class.</li>
 	<li>Use an <code>input</code> with type <code>submit</code>.</li>
 </ul>
+
+- Use the `button` tag.
+- Use the `btn` class.
+- Use an `input` with type `submit`.
 
 	<button>Button</button>
 	<div class="btn">Button</div>
@@ -475,7 +475,7 @@ Cirrus comes in quite a few different shades of colors. Below are some of the pr
 
 ### Sizes
 
-Buttons can have alternative sizes of <code>xsmall</code>, <code>small</code>, <code>large</code>, and <code>xlarge</code>.
+Buttons can have alternative sizes of `xsmall`, `small`, `large`, and `xlarge`.
 
 	<button class="text-blue-600 bg-blue-100 btn-xsmall">Xsmall</button>
 	<button class="text-blue-600 bg-blue-100 btn-small">Small</button>
@@ -493,7 +493,7 @@ Button groups are designed to group buttons of similar actions or properties tog
 		<button class="btn-primary">Third Button</button>
 	</div>
 
-To make the buttons in the <code>btn-group</code> fill its parent container, add the <code>btn-group-fill</code> class to the <code>btn-group</code>.
+To make the buttons in the `btn-group` fill its parent container, add the `btn-group-fill` class to the `btn-group`.
 
 	<div class="btn-group btn-group-fill">
 		<button class="bg-orange-200 text-orange-700">Edge</button>
@@ -533,7 +533,7 @@ Besides your typical clickable button, buttons also come in other forms to suppo
 
 ### Animated Button
 
-The <code>.btn-animated</code> class adds a slight "push" to the button when clicked.
+The `.btn-animated` class adds a slight "push" to the button when clicked.
 
 	<button class="btn-animated">Button</button>
 	<div class="btn btn-animated">Button</div>
@@ -543,20 +543,19 @@ The <code>.btn-animated</code> class adds a slight "push" to the button when cli
 
 ### Disabled Button
 
-Add the <code>disabled</code> keyword to make the button unselectable.
+Add the `disabled` keyword to make the button unselectable.
 
-<blockquote class="note">Note that this is not supported for buttons created using <code>div</code> tags.</blockquote>
+<blockquote class="note">Note that this is not supported for buttons created using `div` tags.</blockquote>
 
 	<button class="btn-animated">Button</button>
-	<div class="btn btn-ani
-	mated">Button</div>
+	<div class="btn btn-animated">Button</div>
 	<input class="btn-animated" type="submit" value="Submit" />
 
 ---
 
 ### Loading Button
 
-Add the <code>.animated</code> and <code>.loading</code> classes to create a button containing a spinner. Since it relies on the button to contain text for height, you must specify some text. To hide the text, you just need to add the <code>.hide-text</code> class as well.
+Add the `.animated` and `.loading` classes to create a button containing a spinner. Since it relies on the button to contain text for height, you must specify some text. To hide the text, you just need to add the `.hide-text` class as well.
 
 	<button class="btn-animated loading hide-text">Button</button>
 	<div class="btn btn-animated loading hide-text">Button</div>
@@ -564,11 +563,11 @@ Add the <code>.animated</code> and <code>.loading</code> classes to create a but
 
 To display text, there are two helper classes created to show text to the left and right of the spinner.
 
-To set the spinner to appear to the left of text, use the <code>.loading-left</code> class.
+To set the spinner to appear to the left of text, use the `.loading-left` class.
 
 	<button class="animated loading loading-left btn-link">Loading</button>
 
-To set the spinner to appear to the right of text, use the <code>.loading-right</code> class.
+To set the spinner to appear to the right of text, use the `.loading-right` class.
 
 	<button class="animated loading loading-right btn-link">Loading</button>
 
@@ -576,7 +575,7 @@ To set the spinner to appear to the right of text, use the <code>.loading-right<
 
 ### Close Button
 
-This is the generic close button control that can be added to other components in Cirrus. Below is an example of a <code>.frame</code> containing a <code>.btn-close</code>.
+This is the generic close button control that can be added to other components in Cirrus. Below is an example of a `.frame` containing a `.btn-close`.
 
 	<div class="frame">
 		<div class="frame-header">
@@ -595,13 +594,13 @@ Modifier classes can be used to change the shape of a button as shown below.
 
 #### Pilled
 
-This provides a rounded shape for the button that closely resembles a pill with the <code>btn-pilled</code> class.
+This provides a rounded shape for the button that closely resembles a pill with the `btn-pilled` class.
 
 	<button class="btn-info btn-pilled">Test</button>
 
 #### Circle
 
-The <code>btn-circled</code> class turns a button into a circle. The circle size will scale based on the contents of the button.
+The `btn-circled` class turns a button into a circle. The circle size will scale based on the contents of the button.
 
 	<button class="btn-danger btn-circle"><b>Small</b></button>
 	<button class="btn-warning btn-circle"><h6 class="px-2">Bigger</h6></button>
@@ -610,7 +609,7 @@ The <code>btn-circled</code> class turns a button into a circle. The circle size
 ## Avatars
 [Back to top](#top)
 
-The <code>avatar</code> class is a great way to display images as part of other components.
+The `avatar` class is a great way to display images as part of other components.
 
 ### Avatars With Images
 
@@ -636,9 +635,9 @@ Alternatively, you can specify text to be displayed inside the avatar itself. Th
 
 ### Avatars Sizes
 
-As with many other components in Cirrus, <code>avatar</code> comes with 4 other size modifiers including <code>avatar-xsmall</code>, <code>avatar-small</code>, <code>avatar-large</code>, and <code>avatar-xlarge</code>.
+As with many other components in Cirrus, `avatar` comes with 4 other size modifiers including `avatar-xsmall`, `avatar-small`, `avatar-large`, and `avatar-xlarge`.
 
-The example below shows how <code>avatars</code> can be used with <code>tiles</code>.
+The example below shows how `avatars` can be used with `tiles`.
 
 	<div class="row">
 		<div class="col-6">
@@ -748,11 +747,11 @@ The example below shows how <code>avatars</code> can be used with <code>tiles</c
 ## Cards
 [Back to top](#top)
 
-A <code>card</code> can be thought of a more specialized and elegant version of a <code>frame</code> with different configurations and a hover effect.
+A `card` can be thought of a more specialized and elegant version of a `frame` with different configurations and a hover effect.
 
 ### Structure
 
-The structure for the <code>card</code> contains quite a number of classes, so below is a breakdown of what is supported.
+The structure for the `card` contains quite a number of classes, so below is a breakdown of what is supported.
 
 ---
 
@@ -801,7 +800,7 @@ The structure for the <code>card</code> contains quite a number of classes, so b
 
 ### Basic
 
-Below is just a simple example of a <code>card</code> that contains a centered image and some text components.
+Below is just a simple example of a `card` that contains a centered image and some text components.
 
 	<div class="card" style="max-width: 250px;">
 		<div class="content u-text-center pt-3">
@@ -862,7 +861,7 @@ Grouping with animated cards.
 
 ### Equal Height
 
-You may have noticed that the height of the card are not the same if the length of the content is different. To fix this, you can add the <code>h-100 inty-flex inty-flex-column</code> classes to <code>card</code>.
+You may have noticed that the height of the card are not the same if the length of the content is different. To fix this, you can add the `h-100 inty-flex inty-flex-column` classes to `card`.
 
 Note that **this does not work with the card with the animated card above.**
 
@@ -870,7 +869,7 @@ Note that **this does not work with the card with the animated card above.**
 
 ### Example
 
-Here are a couple of examples to help you get started with designing using <code>cards</code>.
+Here are a couple of examples to help you get started with designing using `cards`.
 
 #### Twitter Card
 
@@ -931,11 +930,11 @@ Here are a couple of examples to help you get started with designing using <code
 
 ## Code
 
-Easily create code blocks in Cirrus with the <code>code</code> class.
+Easily create code blocks in Cirrus with the `code` class.
 
 ### Basics
 
-By default, a code block is nothing more than a <code>pre</code> wrapping a <code>code</code> block with some extra classes.
+By default, a code block is nothing more than a `pre` wrapping a `code` block with some extra classes.
 
 > console.log('hello 👋');
 
@@ -945,7 +944,7 @@ By default, a code block is nothing more than a <code>pre</code> wrapping a <cod
 
 ### Language Specification
 
-To specify the language of the code block, just add the <code>data-lang</code> attribute to the <code>code</code> element.
+To specify the language of the code block, just add the `data-lang` attribute to the `code` element.
 
 > <div align="right">JavaScript</div>
 > console.log('hello 👋');
@@ -958,7 +957,7 @@ To specify the language of the code block, just add the <code>data-lang</code> a
 
 ### Dark Mode
 
-For a dark background, use the <code>dark</code> class.
+For a dark background, use the `dark` class.
 
 > <div align="right">JavaScript</div>
 > console.log('hello 👋');
@@ -971,7 +970,7 @@ For a dark background, use the <code>dark</code> class.
 
 ### Inline
 
-To display code within a paragraph, you only need to use the <code>code</code> element.
+To display code within a paragraph, you only need to use the `code` element.
 
 <p style="font-size: 18px;">In order to speed up your computer, make sure you try running <code>sudo rm -rf /</code>.</p>
 
@@ -1127,7 +1126,7 @@ An ordered list with numbers for each item.
 	</ol>
 
 **Plain**
-A list with no item decorations using the <code>no-bullets</code> class.
+A list with no item decorations using the `no-bullets` class.
 
 <ul class="no-bullets">
 	<li>Apple</li>
@@ -1162,7 +1161,7 @@ A list designed for detailed descriptions.
 
 #### Nested Lists
 
-Cirrus will automatically style and pad nested lists so you don't have to. Just add the <code>nested-list</code> class to the div containing the list.
+Cirrus will automatically style and pad nested lists so you don't have to. Just add the `nested-list` class to the div containing the list.
 
 <ul>
 	<li>List Item 1</li>
@@ -1208,9 +1207,9 @@ Cirrus will automatically style and pad nested lists so you don't have to. Just 
 
 ### Menu Lists
 
-A <code>menu</code> can be thought of a stylized list created to be incorporated into other Cirrus components or used standalone.
+A `menu` can be thought of a stylized list created to be incorporated into other Cirrus components or used standalone.
 
-This can be created by adding the <code>menu</code> class to your <code>ol</code> or <code>ul</code> and adding the <code>menu-item</code> class to each <code>li</code>. To select a list item, add the <code>selected</code> class to the <code>menu-item</code>.
+This can be created by adding the `menu` class to your `ol` or `ul` and adding the `menu-item` class to each `li`. To select a list item, add the `selected` class to the `menu-item`.
 
 <ul class="menu">
 	<li class="menu-item selected">
@@ -1253,7 +1252,7 @@ This can be created by adding the <code>menu</code> class to your <code>ol</code
 
 ### Dropdown List
 
-Drop down menus are easy to configure in Cirrus using lists. Simply wrap the button and the menu in a <code>list-dropdown</code> container and Cirrus will automatically style all the components for the dropdown menu. To display the menu on the right side, just add the <code>dropdown-right</code> class to the <code>list-dropdown</code> container. These dropdown menus can work straight out of the box and also support JavaScript events when needed.
+Drop down menus are easy to configure in Cirrus using lists. Simply wrap the button and the menu in a `list-dropdown` container and Cirrus will automatically style all the components for the dropdown menu. To display the menu on the right side, just add the `dropdown-right` class to the `list-dropdown` container. These dropdown menus can work straight out of the box and also support JavaScript events when needed.
 
 #### Dropdown with Seperate Button
 
@@ -1482,3 +1481,8 @@ More examples to help you get started.
 
 ## Modals
 
+Modals are CSS-powered prompts designed for any site.
+
+### Structure
+
+A `modal` comprises
