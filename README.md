@@ -53,22 +53,22 @@
 ## Table of Contents 
 
  1. [Development](#development)
- 2. [Colors](#colors)
-	 2.1 [Classes](#classes)
-	 2.2 [v1 Colors](#v1-colors)
+ 2. [Colors](#colors) <br>
+	 2.1 [Classes](#classes) <br>
+	 2.2 [v1 Colors](#v1-colors) <br>
 	 2.3 [v2 Colors](#v2-colors)
- 3. [Typography](#typography)
+ 3. [Typography](#typography) <br>
 	 3.1 [Typefaces](#typefaces)
- 4. [Viewports](#viewports)
-	 4.1 [Default Behavior](#default-behavior)
-	 4.2 [Breakpoints](#breakpoints)
+ 4. [Viewports](#viewports) <br>
+	 4.1 [Default Behavior](#default-behavior) <br>
+	 4.2 [Breakpoints](#breakpoints) <br>
 	 4.3 [Usage](#usage)
  5. [Customization](#customization)
- 6. [Animations](#animations)
-	 6.1 [Loading](#loading)
-	 6.2 [Hover Grow](#hover-grow)
-	 6.3 [Entrance Animations](#entrance-animations)
-	 6.4 [Infinite Animations](#infinite-animations)
+ 6. [Animations](#animations) <br>
+	 6.1 [Loading](#loading) <br>
+	 6.2 [Hover Grow](#hover-grow) <br>
+	 6.3 [Entrance Animations](#entrance-animations) <br>
+	 6.4 [Infinite Animations](#infinite-animations) <br>
 	 6.5 [Animation Utils](#animation-utils)	 
 
 ## Development
