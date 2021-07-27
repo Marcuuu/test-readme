@@ -72,7 +72,7 @@ The standard color palette from older versions of the framework.
 Cirrus has an extensive color palette that has been updated with 0.6.0 to make them more accessible to all page elements.
 
 | | -100 | -200 | -300 | -400 | -500 | -600 | -700 | -800 | -900 |
-|--|--|--|--|--|--|--|--|--|--|--|--|
+|--|--|--|--|--|--|--|--|--|--|
 | pink |
 | red |
 | orange |
